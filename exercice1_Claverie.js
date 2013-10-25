@@ -1,11 +1,11 @@
-//fonction adder v1
+//function adder v1
 function adder(l, r){
 	return function(v){
 		return l(v) + r(v);
 	}
 }
 
-//fonction mult
+//function mult
 function mult(v){
 	return function(e){
 		return v*e;
@@ -15,7 +15,7 @@ function mult(v){
 //test adder
 adder(mult(2), mult(4))(2); // 12
 
-//fonction sub
+//function sub
 function sub(v){
 	return function(e){
 		return v-e;
@@ -42,7 +42,6 @@ function adder(){
 }
 
 //test adder v2
-
 adder()(0); // 0
 adder()(1); // 0
 adder(mult(2))(1); // 2
